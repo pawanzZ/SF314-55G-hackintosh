@@ -12,7 +12,7 @@
 - [DSDT patch](#dsdt)
 - [Dual Boot Windows](#windows)
 - [Audio Line-in fix](#headphone-line-in)
-- [Ref]()
+- [Credits](#credits)
 ## Model 
 Acer swift 2019 SF314-55G hackintosh
 Acer Swift 3 2019 SF314-55G
@@ -86,13 +86,14 @@ Acer Swift 3 2019 SF314-55G
 	- VoodooI2C.kext + VoodooI2CHID.kext
 	- DSDT patch
 		- I2C Controllers [SKL] +GPIO Controller Enable
-### Microphone with line-in fix  <a name="headphone-line-in" href="https://github.com/hackintosh-stuff/ComboJack"></a>
-- Hackintosh combojack support for alc256/alc255. ref: 
+### Microphone with line-in fix  <a name="headphone-line-in"></a>
+
+- Hackintosh combojack support for alc256/alc255. ref: https://github.com/hackintosh-stuff/ComboJack
 1. Delete CodecCommander.kext，put ComboJack_Installer/VerbStub.kext in Clover/kexts/Other
 2. Run ComboJack_Installer/install.sh in terminal and reboot
 3. Done. When you attach a headphone there will be a popup asking about headphone type.
 
-### Dual Boot Windows < name="windows"></>
+### Dual Boot Windows <a name="windows"></a>
 
 - I use my own clone windows from Acer service center (Acronis True image file)
 - restore windows
@@ -101,5 +102,5 @@ Acer Swift 3 2019 SF314-55G
 	- bcdboot C:\Windows /s <efi letter>: /f UEFI
 
 
-## Ref.
-- Thanks to richardchiu [Guide] Acer Swift 5 SF514-53t whiskey lake MacOS10.14.5
+## Ref. <a name="credits"></a>
+- Thanks to cjtim for OG repo & richardchiu [Guide] Acer Swift 5 SF514-53t whiskey lake MacOS10.14.5 
